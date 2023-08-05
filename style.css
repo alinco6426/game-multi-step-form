@@ -1,0 +1,568 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Ubuntu&display=swap');
+body{
+    background-color: hsl(217, 100%, 97%);
+    font-family: 'ubuntu';
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.form-container{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    margin: 60px 0;
+
+}
+form{
+    background-color: hsl(0, 0%, 100%);
+    height: 600px;
+    padding: 20px;
+    display: flex;
+    width: 800px;
+    border-radius: 10px;
+}
+.sidebar{
+    height: 100%;
+    width: 30%;
+    background-image: url("bg-sidebar-desktop.svg");
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    padding: 20px 2px;
+    background-size: cover;
+}
+.sidebars-containers{
+    display: flex;
+    margin:  2px 0;
+}
+.sidebars-containers .step-indicator{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    outline: none;
+    border: hsl(0, 0%, 100%) solid 1.1px;
+    margin: 15px 15px;
+    background-color: transparent;
+    color: hsl(0, 0%, 100%); 
+    font-weight: 500;
+    font-family: 'ubuntu';
+    font-weight: 600;
+}
+ .step-container {
+      width: 100%;
+      height: 100%;
+  }
+.sidebars-containers span{
+    margin: 10px 0;
+    color: hsl(0, 0%, 100%);
+    text-transform: uppercase;
+    font-size: 8px;
+}
+.sidebars-containers span h4{
+    margin: 5px 0;
+    color: hsl(217, 100%, 97%);
+    font-weight: 100;
+    font-size: 10px;
+    font-family: 100;
+}
+.form-steps{
+    width: 70%;
+    margin: 10px;
+    height: 100%;
+    position: relative;
+}
+.steps{
+    width: 100%;
+    padding: 10px 30px;
+    height: 100px;
+}
+.steps h1{
+    color: hsl(213, 96%, 18%);
+    font-size: 25px;
+    font-weight:800;
+    margin: 10px 0;
+}
+.steps p{
+    color: hsl(231, 11%, 63%);
+    font-size: 16px;
+    margin: 15px 0;
+    font-weight: 500;
+    line-height: 20px;
+}
+.step-one label {
+    display: block;
+    font-weight: 600;
+    color: hsl(213, 77%, 33%);
+    margin-top: 20px;
+    position: relative;
+    width: 100%;
+}
+ .step-one .info-getters {
+     display: block;
+     margin: 10px 0;
+     outline: none;
+     padding: 10px;
+     width: 100%;
+     border:  1px solid hsl(229, 24%, 87%);
+     border-radius: 5px;
+     font-family: 'ubuntu';
+     color: hsl(213, 96%, 18%);
+     font-weight: 500;
+ }
+ .step-one .info-getters:focus{
+    border: 1px solid hsl(243, 100%, 62%);
+ }
+ .step-one label .alert-message{
+    color: hsl(354, 84%, 57%);
+    position: absolute;
+    right: 0;
+    top: -8px;
+    font-size: 12px;
+    font-weight: 600;
+ }
+ input[type=number]::-webkit-outer-spin-button,input[type=number]::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+.plans{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.plans-item{
+    height: 180px;
+    border: 1px solid hsl(229, 24%, 87%);
+    width: 33.3%;
+    padding: 20px;
+    margin: 20px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.plans-item img{
+    margin-bottom: 50px;
+    width: 40px;
+}
+.plans-item h5{
+    font-size: 16px;
+    font-weight: 600;
+    color: hsl(213, 77%, 33%);
+    line-height: 15px;
+}
+.step-two .plans-item p{
+    font-size: 14px;
+    margin: 5px 0;
+    font-weight: 500;
+    padding: 0;
+}
+.plans-item .discount{
+    display: none;
+    color: hsl(213, 96%, 18%);
+    font-weight: 500;
+}
+.plans-changer{
+    margin-top: 25px;
+    display: grid;
+    background-color: hsl(217, 100%, 97%);
+    width: 100%;
+    padding: 10px 40px;
+    border-radius: 10px;
+    justify-content: center;
+}
+.plans-changer-div{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.plans-changer label{
+    width: 40px;
+    background-color: hsl(213, 96%, 18%);
+    padding:  3px 0;
+    border-radius: 15px;
+    height: 20px;
+    margin-inline: 40px;
+    cursor: pointer;
+}
+.plans-changer label #toggle-check{
+    display: none                         ;
+}
+.plans-changer label .toggle-button{
+    background-color: hsl(0, 0%, 100%);
+    padding: 1px;
+    cursor: pointer;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-top: 1px;
+    margin-left: 5px;
+    transform: translateX(0);
+    transition: transform 1s;
+
+}
+.plans-changer label #toggle-check:checked ~ .toggle-button{
+    transform: translateX(18px);
+}
+.plans-changer-div h5{
+    font-size: 16px;
+}
+.month{
+    color: hsl(213, 77%, 33%);
+}
+.year{
+        color: hsl(231, 11%, 63%);
+}
+.current-duration{
+    color: hsl(213, 77%, 33%);
+}
+.previous-duration{
+    color: hsl(231, 11%, 63%);
+}
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    margin: 0;
+    left: 0px;
+    padding: 20px;
+}
+.next-btn:first-child {
+    display: block;
+    transform: translateX(400px);
+}
+.navigation-button{
+    border: none;
+    outline: none;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 50px;
+    cursor: pointer;
+    font-weight: 500;
+    font-family: 'ubuntu';
+}
+.next-btn {
+    float: right;
+    background-color: hsl(213, 96%, 18%);
+    color: hsl(0, 0%, 100%);
+  
+}
+.previous-btn{
+    float: left;
+    background-color: transparent;
+    color: hsl(213, 96%, 18%);
+}
+.add-ons-container{
+    margin-top: 30px;
+    width: 100%;
+}
+.add-ons-item{
+    height: 65px;
+    display: flex;
+    width: 100%;
+    margin: 15px 0;
+    justify-content: space-between;
+    border: 1px solid hsl(229, 24%, 87%);
+    padding: 15px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.add-ons-service{
+    display: flex;
+}
+.add-ons-service label{
+    margin-right: 15px;
+    width: 14px;
+    height: 12px;
+    margin-top: 10px;
+}
+
+.add-ons-service .add-ons-selector{
+    display: none;
+}
+.add-ons-service h5{
+       color: hsl(213, 77%, 33%);
+       font-size: 14px;
+}
+.add-ons-service p {
+    color: hsl(231, 11%, 63%);
+    font-size: 12px;
+    margin: 0;
+}
+.add-ons-service label .add-ons-toggle{
+    width: 5px;
+    height: 6px;
+    cursor: pointer;
+    background-color: transparent;
+    padding: 7px;
+    position: relative;
+    border: 1px solid hsl(229, 24%, 87%);
+    border-radius: 2px;
+}
+.add-ons-toggle::after{
+    content: '';
+    display: table;
+    padding: 2px;
+    width: 2px;
+    height: 4px;
+    position: absolute;
+    border: solid hsl(0, 0%, 100%);
+    border-width:  0 2px 2px 0;
+    transform: rotate(45deg);
+    top: -0.4px;
+    right: 3px;
+    display: none;
+}
+.add-ons-service label .add-ons-selector:checked ~ .add-ons-toggle{
+    background-color:hsl(243, 100%, 62%);
+    border: none;
+}
+.add-ons-service label .add-ons-selector:checked ~.add-ons-toggle::after{
+    display: block;
+}
+.add-ons-price p{
+    color: hsl(243, 100%, 62%);
+    font-weight: 100;
+    font-size: 12px;
+    margin: 8px 0 0 0;
+}
+.check-out-container{
+    height: auto;
+    width: 100%;
+    background-color: hsl(217, 100%, 97%);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+.check-out-container p{
+    margin: 10px 0 ;
+    font-size: 12px ;
+    line-height: normal;
+    font-weight: 600;
+}
+.plan-selection,.total-check{
+    display: flex;
+    justify-content: space-between;
+}
+.plan-selection .plan-changer-btn{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    text-transform: capitalize;
+    color: hsl(231, 11%, 63%);
+    border-bottom: 1.5px solid hsl(231, 11%, 63%);
+    margin-top: 10px;
+    cursor: pointer;
+}
+.plan-changer-btn:hover{
+    color: hsl(243, 100%, 62%);
+}
+.check-out-container hr{
+    margin-top: 20px;
+    color: hsl(229, 24%, 87%);
+    outline: none;
+}
+ .check-out-container .amount-mounter,.plan{
+    color: hsl(213, 77%, 33%);
+}
+.total-check .total-amount {
+    color: hsl(243, 100%, 62%);
+}
+.add-ons-display{
+    margin-top: 20px;
+}
+.total-check h5{
+    color: hsl(231, 11%, 63%);
+}
+.confirm-btn{
+    background-color: hsl(243, 100%, 62%);
+    color: hsl(0, 0%, 100%);
+}
+.step-five{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.feedback-container{
+    text-align: center;
+    margin-top: 100px;
+    padding: 20px;
+}
+.feedback-container img{
+    width: 60px;
+    margin: 10px 0;
+}
+.feedback-container h1{
+    margin: 10px 0;
+}
+.feedback-container p{
+    font-size: 16px;
+    margin-top: 15px;
+    font-weight: 500;
+}
+
+.steps{
+    display: none;
+}
+.active{
+    display: block;
+}
+.selected{
+    background-color: hsl(217, 100%, 97%);
+    border: 1px solid hsl(243, 100%, 62%);
+}
+.sidebars-containers .step-indicator.taken{
+    background-color: hsl(206, 94%, 87%);
+    color: hsl(213, 96%, 18%);
+    border: 1px solid hsl(243, 100%, 62%);
+}
+.item-list{
+    display: flex;
+    justify-content: space-between;
+}
+ .info-getters.wrong{
+    border: 1px solid hsl(354, 84%, 57%);
+}
+
+@media screen and (max-width:500px) {
+
+    .form-container {
+            display: block;
+            align-content: normal;
+            justify-content: normal;
+            width: 100%;
+            padding: 20px;
+            background-image: url("bg-sidebar-mobile.svg");
+            background-repeat: no-repeat;
+            background-size: 100%;
+            padding-bottom: 100px;
+            margin: 0;
+        }
+    
+        form {
+            background-color: transparent;
+            height: auto;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            border-radius: 5px;
+            position: relative;
+        }
+    
+        .sidebar {
+            width: 100%;
+            background-image: none;
+            padding: 5px 2px;
+            display: flex;
+            justify-content: center;
+            height: auto;
+        }
+    
+        .sidebars-containers {
+            margin: 2px 0;
+        }
+    
+        .sidebars-containers .step-indicator {
+            width: 35px;
+            height: 35px;
+        }
+    
+        .sidebars-containers span {
+            margin: 5px 0;
+            display: none;
+        }
+    
+        .sidebars-containers span h4 {
+            margin: 5px 0;
+            color: hsl(231, 100%, 99%);
+            font-weight: 100;
+            font-size: 10px;
+        }
+    
+        .form-steps {
+            width: 100%;
+            margin: 10px;
+            height: 10;
+            border-radius: 5px;
+        }
+        .step-container{
+            width: 100%;
+        }
+    
+        .steps {
+            width: 100%;
+            padding: 10px 30px;
+            height: auto;
+            background-color: hsl(0, 0%, 100%);
+            border-radius: 10px;
+            padding: 30px;
+        }
+        .step-one label {
+            margin-top: 30px;
+            width: 100%;
+        }
+    
+        .step-one .info-getters {
+            margin: 10px 0;
+            width: 100%;
+            height: 45px;
+        }
+    
+         .step-one label .alert-message {
+            top: -20px;
+        }
+        .plans {
+            display: block;
+            width: 100%;
+        }
+        .plans-item {
+            height: 100px;
+            width: 100%;
+            padding: 10px;
+            margin:  15px 0;
+            display: flex;
+        }
+    
+        .plans-item img {
+            margin-bottom: 0;
+            margin-right: 10px;
+            width: 45px;
+        }
+        .plans-item .plan-name-price-container{
+            margin-top: 20px;
+        }
+        .plans-changer {
+            width: 100%;
+            padding: 20px 40px;
+        }
+        .button-container {
+            bottom: -45%;
+            background-color: hsl(0, 0%, 100%);
+            width: 100%;
+            border-radius: 5px;
+            margin: 0;
+            left: 0px;
+            right: 0;
+            padding: 20px;
+        }
+        .navigation-button {
+            border: none;
+            outline: none;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+            margin-top: 0px;
+            cursor: pointer;
+            font-weight: 600;
+            font-family: 'ubuntu';
+        }
+        .feedback-container {
+            margin-top: 40px;
+        }
+        .next-btn:first-child {
+            transform: translateX(240px);
+        }
+
+}

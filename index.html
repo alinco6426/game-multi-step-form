@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Multi-step form</title>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+
+
+
+  
+  <div class="form-container">
+    <form action="get">
+      <!-- Sidebar start -->
+      <div class="sidebar">
+        <div class="sidebars-containers">
+          <button type="button" class="step-indicator">1</button>
+          <span>
+            <h4>Step 1</h4>
+            <h2>Your info</h2>
+          </span>
+        </div>
+
+        <div class="sidebars-containers">
+          <button type="button" class="step-indicator">2</button>
+          <span>
+            <h4>Step 2</h4>
+            <h2>Select plan</h2>
+          </span>
+        </div>
+
+        <div class="sidebars-containers">
+          <button type="button" class="step-indicator">3</button>
+          <span>
+            <h4>Step 3</h4>
+            <h2>Add-ons</h2>
+          </span>
+        </div>
+
+        <div class="sidebars-containers">
+          <button type="button" class="step-indicator">4</button>
+          <span>
+            <h4>Step 4</h4>
+            <h2>Summary</h2>
+          </span>
+        </div>
+      </div>
+
+      <!-- Sidebar end -->
+
+      <!-- form-steps start  -->
+      <div class="form-steps">
+
+        <!-- Step 1 start -->
+
+        <div class="step-one steps">
+          <h1>Personal info</h1>
+          <p>Please provide your name, email address, and phone number.</p>
+          <label for="name">
+            Name
+            <input type="text" id="name" class="info-getters" placeholder="e.g. Stephen King">
+            <p class="alert-message"></p>
+          </label>
+
+          <label for="email">
+            Email Address
+            <input type="email" id="email" class="info-getters" required placeholder=" e.g. stephenking@lorem.com">
+            <p class="alert-message"></p>
+          </label>
+
+          <label for="number">
+            Phone Number
+            <input type="number" id="number" class="info-getters" placeholder="e.g. +1 234 567 890" >
+            <p class="alert-message"></p>
+          </label>
+          <div class="button-container">
+            <button type="button" class="next-btn navigation-button">Next Step</button>
+          </div>
+        </div>
+
+        <!-- Step 1 end -->
+
+        <!-- Step 2 start -->
+        <div class="step-two steps">
+          <h1>Select your plan</h1>
+          <p>You have the option of monthly or yearly billing.</p>
+
+          <!-- plans container start  -->
+          <div class="plans">
+
+            <!-- plans item start  -->
+            <span class="plans-item">
+              <img src="icon-arcade.svg" alt="icon-arcade">
+              <span class="plan-name-price-container">
+                <h5 class="plans-name">Arcade</h5>
+                <p>$<span class="plans-amount charges-amounts-change">9</span><span class="duration">/mo</span></p>
+                <small class="discount">2 months free</small>
+              </span>
+            </span>
+
+            <span class="plans-item">
+              <img src="icon-advanced.svg" alt="icon-advanced">
+              <span class="plan-name-price-container">
+                <h5 class="plans-name">Advanced</h5>
+                <p>$<span class="plans-amount charges-amounts-change">12</span><span class="duration">/mo</span></p>
+                <small class="discount">2 months free</small>
+              </span>
+            </span>
+
+            <span class="plans-item">
+
+              <img src="icon-pro.svg" alt="icon-pro">
+              <span class="plan-name-price-container">
+                <h5 class="plans-name">Pro</h5>
+                <p>$<span class="plans-amount charges-amounts-change">15</span><span class="duration">/mo</span></p>
+                <small class="discount">2 months free</small>
+              </span>
+
+            </span>
+            <!-- plans item end -->
+
+          </div>
+          <!-- items container end -->
+
+          <!-- toggle div start  -->
+
+          <div class="plans-changer">
+            <!-- plans changer container  -->
+
+            <div class="plans-changer-div">
+              <h5 class="month">Monthly</h5>
+
+              <label for="toggle-check">
+                <input type="checkbox" id="toggle-check">
+                <div class="toggle-button"></div>
+              </label>
+
+              <h5 class="year"> Yearly</h5>
+            </div>
+            <!-- plan changer end -->
+          </div>
+
+          <!-- toggle div end -->
+
+
+          <!-- button container start  -->
+
+          <div class="button-container">
+            <button type="button" class="previous-btn navigation-button">Go Back</button>
+            <button type="button" class="next-btn navigation-button">Next Step</button>
+          </div>
+          <!-- button contianer start  -->
+
+        </div>
+        <!-- Step 2 end -->
+
+        <!-- Step 3 start -->
+        <div class="step-three steps">
+          <h1>Pick add-ons</h1>
+          <p>Add-ons help enhance your gaming experience.</p>
+
+          <!-- add-ons container start  -->
+          <div class="add-ons-container">
+
+            <div class="add-ons-item">
+
+              <div class="add-ons-service">
+
+                <label>
+                  <input type="checkbox" class="add-ons-selector">
+                  <div class="add-ons-toggle"></div>
+                </label>
+                <span>
+                  <h5 class="services">Online service</h5>
+                  <p>Access to multiplayer games</p>
+                </span>
+
+              </div>
+              <div class="add-ons-price">
+                <p>+$<span class="add-ons-charges charges-amounts-change">1</span><span class="duration">/mo</span></p>
+              </div>
+            </div>
+
+            <div class="add-ons-item">
+              <div class="add-ons-service">
+
+                <label>
+                  <input type="checkbox" class="add-ons-selector">
+                  <div class="add-ons-toggle"></div>
+                </label>
+
+                <span>
+                  <h5 class="services">Larger storage</h5>
+                  <p>Extra 1TB of cloud save</p>
+                </span>
+
+              </div>
+              <div class="add-ons-price">
+                <p>+$<span class="add-ons-charges charges-amounts-change">2</span><span class="duration">/mo</span></p>
+              </div>
+
+            </div>
+
+            <div class="add-ons-item">
+              <div class="add-ons-service">
+
+
+                <label>
+                  <input type="checkbox" class="add-ons-selector">
+                  <div class="add-ons-toggle"></div>
+                </label>
+
+                <span>
+                  <h5 class="services">Customizable Profile</h5>
+                  <p>Custom theme on your profile</p>
+                </span>
+
+              </div>
+              <div class="add-ons-price">
+                <p>+$<span class="add-ons-charges charges-amounts-change">3</span><span class="duration">/mo</span></p>
+              </div>
+            </div>
+
+          </div>
+          <!-- add-ons contianer ends -->
+
+          <!-- button container start  -->
+
+          <div class="button-container">
+            <button type="button" class="previous-btn navigation-button">Go Back</button>
+            <button type="button" class="next-btn navigation-button">Next Step</button>
+          </div>
+          <!-- button contianer start  -->
+
+        </div>
+
+        <!-- Step 3 end -->
+
+
+        <!-- Step 4 start -->
+
+        <div class="step-four steps">
+          <h1>Finishing up</h1>
+          <p>Double-check everything looks OK before confirming.</p>
+          <!-- check-out-container start  -->
+          <div class="check-out-container">
+
+            <div class="plan-selection">
+
+              <div>
+                <h4 class="plan"><span id="plan-name-display"></span>(<span id="plan-period-display">Monthly</span>)
+                </h4>
+                <button type="button" class="plan-changer-btn" id="plan-changer-btn">change</button>
+              </div>
+
+              <div>
+                <p class="amount-mounter">
+                  $<span id="plan-amount-display" class="charges-amounts-change"></span>
+                  <span class="duration">/mo</span>
+                </p>
+              </div>
+
+            </div>
+
+            <hr>
+
+            <div id="add-ons-selections"></div>
+          </div>
+          <!-- check-out-container end  -->
+
+          <!-- total amount contianer start  -->
+          <div class="total-check">
+            <h5>Total ( per <span id="plan-period">month</span>)</h5>
+            <h3 class="total-amount">$ <span id="total-amount"></span><span class="duration">/mo</span></h3>
+          </div>
+          <!-- total amount container end  -->
+
+          <!-- button container start  -->
+
+          <div class="button-container">
+            <button type="button" class="previous-btn navigation-button">Go Back</button>
+            <button type="button" class="confirm-btn navigation-button" id="confirm-btn">Confirm</button>
+          </div>
+          <!-- button contianer start  -->
+
+        </div>
+        <!-- Step 4 end -->
+
+        <!-- Step 5 start -->
+
+        <div class="step-five steps">
+          <div class="feedback-container">
+            <img src="icon-thank-you.svg" alt="icon-thank-you">
+            <h1>Thank you!</h1>
+            <p>Thanks for confirming your subscription! We hope you have fun
+              using our platform. If you ever need support, please feel free
+              to email us at support@rexxgaming.com.</p>
+          </div>
+        </div>
+
+        <!-- Step 5 end -->
+      </div>
+      <!-- form-steps end  -->
+    </form>
+    <!-- form ends  -->
+  </div>
+
+ 
+  <script src="file.js"></script>
+</body>
+
+</html>
