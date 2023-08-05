@@ -74,8 +74,8 @@ I want to sharpen my skill on using javascript regular expression.
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [supamarioalinco](https://www.twitter.com/yourusername)
+- Frontend Mentor - [@alinco6426][(https://www.frontendmentor.io/profile/alinco6426)
+- Twitter - [@supamarioalinco](https://twitter.com/supamarioalinco?s=21)
 
 **Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
 
